@@ -187,10 +187,10 @@ namespace Registro_con_detalle.UI
             // AgregarButton
             // 
             this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
-            this.AgregarButton.Location = new System.Drawing.Point(469, 22);
+            this.AgregarButton.Location = new System.Drawing.Point(483, 50);
             this.AgregarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(131, 67);
+            this.AgregarButton.Size = new System.Drawing.Size(118, 41);
             this.AgregarButton.TabIndex = 11;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

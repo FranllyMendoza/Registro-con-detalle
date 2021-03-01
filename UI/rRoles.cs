@@ -177,6 +177,14 @@ namespace Registro_con_detalle.UI
             if (DetallesDataGridView.DataSource != null)
                 this.Detalle = (List<RolesDetalle>)DetallesDataGridView.DataSource;
 
+            if (PermisosComboBox.Text == string.Empty)
+            {
+
+                MessageBox.Show("Debes seleccionar un permiso antes de continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+            }
+
             this.Detalle.Add(
                 new RolesDetalle(
                     id: 0,
@@ -187,7 +195,6 @@ namespace Registro_con_detalle.UI
             );
             CargarGrid();
             PermisosComboBox.Focus();
-            //PermisosComboBox.Items.Clear();
             AsignadoCheckBox.Checked = paso;
         }
 
