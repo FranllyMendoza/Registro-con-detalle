@@ -109,9 +109,9 @@ namespace Registro_con_detalle.UI
             this.label4.Location = new System.Drawing.Point(9, 83);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 25);
+            this.label4.Size = new System.Drawing.Size(78, 25);
             this.label4.TabIndex = 49;
-            this.label4.Text = "Nombres";
+            this.label4.Text = "Nombre";
             // 
             // AliasTextBox
             // 

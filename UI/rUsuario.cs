@@ -74,12 +74,7 @@ namespace Registro_con_detalle.UI
             return (usuarios != null);
         }
 
-        /*  private void RegistroUsuarioForm_Load(object sender, EventArgs e)
-          {
-              RolComboBox.DataSource = rRolesBLL.GetrRoles();
-              RolComboBox.DisplayMember = "Descripcion";
-              RolComboBox.ValueMember = "RolId";
-          }*/
+       
 
         private bool Validar()
         {
@@ -162,27 +157,17 @@ namespace Registro_con_detalle.UI
 
             usuarios = LlenaClase();
 
-            if (IdNumericUpDown.Value == 0)
-                paso = UsuarioBLL.Guardar(usuarios);
-            else
-            {
-                if (!ExisteEnLaBaseDeDatos())
-                {
-                    MessageBox.Show("No se puede modificar", "Modificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                paso = UsuarioBLL.Modificar(usuarios);
-            }
+            paso = UsuarioBLL.Guardar(usuarios);
 
             if (paso)
             {
                 Limpiar();
-                MessageBox.Show("Guardado!!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("se guardo exitosamente!", "exito",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
-            {
-                MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                MessageBox.Show("no se guardo exitosamente", "Fallo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)

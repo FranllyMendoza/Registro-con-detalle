@@ -144,27 +144,17 @@ namespace Registro_con_detalle.UI
 
             rol = LlenaClase();
 
-            if (IdNumericUpDown.Value == 0)
-                paso = RolesBLL.Guardar(rol);
-            else
-            {
-                if (!ExisteEnLaBaseDeDatos())
-                {
-                    MessageBox.Show("No se puede modificar", "Modificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                paso = RolesBLL.Modificar(rol);
-            }
+            paso = RolesBLL.Guardar(rol);
 
             if (paso)
             {
                 Limpiar();
-                MessageBox.Show("Guardado!!", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("se guardo exitosamente!", "exito",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
-            {
-                MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                MessageBox.Show("no se guardo exitosamente", "Fallo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void EliminarButton_Click(object sender, EventArgs e)

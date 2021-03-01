@@ -36,9 +36,6 @@ namespace Registro_con_detalle.UI
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.EliminarButton = new System.Windows.Forms.Button();
-            this.GuardarButton = new System.Windows.Forms.Button();
-            this.NuevoButton = new System.Windows.Forms.Button();
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
@@ -91,45 +88,6 @@ namespace Registro_con_detalle.UI
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // EliminarButton
-            // 
-            this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
-            this.EliminarButton.Location = new System.Drawing.Point(284, 93);
-            this.EliminarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(131, 68);
-            this.EliminarButton.TabIndex = 51;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.EliminarButton.UseVisualStyleBackColor = true;
-            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
-            // 
-            // GuardarButton
-            // 
-            this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
-            this.GuardarButton.Location = new System.Drawing.Point(145, 93);
-            this.GuardarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(131, 68);
-            this.GuardarButton.TabIndex = 52;
-            this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.GuardarButton.UseVisualStyleBackColor = true;
-            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
-            // 
-            // NuevoButton
-            // 
-            this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
-            this.NuevoButton.Location = new System.Drawing.Point(6, 93);
-            this.NuevoButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(131, 68);
-            this.NuevoButton.TabIndex = 53;
-            this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.NuevoButton.UseVisualStyleBackColor = true;
-            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
-            // 
             // ErrorProvider
             // 
             this.ErrorProvider.ContainerControl = this;
@@ -138,10 +96,7 @@ namespace Registro_con_detalle.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 168);
-            this.Controls.Add(this.NuevoButton);
-            this.Controls.Add(this.GuardarButton);
-            this.Controls.Add(this.EliminarButton);
+            this.ClientSize = new System.Drawing.Size(417, 98);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.IdNumericUpDown);
             this.Controls.Add(this.label3);
@@ -165,9 +120,6 @@ namespace Registro_con_detalle.UI
         private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.Button EliminarButton;
-        private System.Windows.Forms.Button GuardarButton;
-        private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider;
     }
 }
